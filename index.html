@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>موقع خدمات التصميم ديالي</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f5f7;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+    }
+    header {
+      background-color: #1e90ff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #007acc;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+    h1, h2 {
+      margin-bottom: 15px;
+    }
+    .services {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .service-card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      flex: 1 1 250px;
+      text-align: center;
+    }
+    .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .portfolio img {
+      width: 200px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .portfolio img:hover {
+      transform: scale(1.05);
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #007acc;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>خدمات التصميم ديالي</h1>
+  <p>تصميم صور مصغرة احترافية لفيديوهاتك</p>
+</header>
+
+<nav>
+  <a href="#services"><i class="fa-solid fa-wrench"></i> الخدمات</a>
+  <a href="#portfolio"><i class="fa-regular fa-image"></i> نماذج أعمال</a>
+  <a href="#contact"><i class="fa-solid fa-envelope"></i> تواصل معي</a>
+</nav>
+
+<section id="services" class="container">
+  <h2>الخدمات ديالي</h2>
+  <div class="services">
+    <div class="service-card">
+      <h3>تصميم صورة مصغرة</h3>
+      <p>تصميم صور مميزة تجذب المشاهدين لمحتواك</p>
+      <p>خدمة سريعة وجودة عالية بأثمنة مناسبة.</p>
+    </div>
+    <div class="service-card">
+      <h3>تصميم شعارات</h3>
+      <p>تصميم لوجو احترافي لقناتك أو مشروعك</p>
+    </div>
+    <div class="service-card">
+      <h3>تصميم غلاف للفيديو</h3>
+      <p>تصميم غلاف جذاب لفيديوهات اليوتيوب أو البودكاست</p>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="container">
+  <h2>نماذج أعمالي</h2>
+  <div class="portfolio">
+    <img src="IMAGE/Screenshot%202025-08-06%20161109.png" alt="صورة 1" />
+    <img src="IMAGE/Screenshot%202025-08-06%20162656.png" alt="صورة 2" />
+    <img src="IMAGE/Screenshot%202025-08-06%20162929.png" alt="صورة 3" />
+  </div>
+</section>
+
+<section id="contact" class="container">
+  <h2>تواصل معي</h2>
+  <form>
+    <label for="name">الاسم</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">الإيميل</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="message">الرسالة</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">إرسال</button>
+  </form>
+</section>
+
+<footer>
+  <p>جميع الحقوق محفوظة © 2025</p>
+</footer>
+
+</body>
+</html>
